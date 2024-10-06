@@ -1,0 +1,197 @@
+//AsakaMod-36D音效播放
+//UI作者:Lossiay   QQ：1957849997
+//本开源项目使用LGPL 3.0协议
+//允许进行二次创作并分发，但是分发内容必须遵循上述开源协议与36D音效播放二次创作流程
+//二次创作请勿删除注释
+{
+  "type": "Menu",
+  "title": "<=音频播放=>",
+  "title_bg_color": "#7581FF",
+  "color": "#FEFEFE",
+  "alpha": 0.85,
+  "can_close": true,
+  "hide": true,
+  "close_icon": "ic_close.png",
+  "items": [
+     {
+       "type": "TextView",
+       "html": "<a href=''>项目地址</a>",
+       "url": "https://github.com/MoYuanCN/RIP-PrivateMod/",
+       "size": 12,
+      "padding": [10, 5, 10 5]
+    },
+    {
+      "type": "TextView",
+      "html": "UI原作者：<a href=''>Lossiay</a>",
+      "url": "https://qm.qq.com/cgi-bin/qm/qr?k=yMgA1MGNCZVR5qZhI5BzHzO0dWA3hwg5",
+      "color": "#BC8F8F",
+      "size": 12,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "name": ">36D音频播放<",
+      "color": "#8CFFE4",
+      "size": 12,
+      "padding": [5, 5, 5, 5],
+      "load_script": "36D音频播放.js"
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "name": "退出脚本",
+      "color": "#000000",
+      "size": 11,
+      "key": "exit",
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "Switch",
+      "on_sound": "on.mp3",
+      "off_sound": "off.mp3",
+      "key": "soundPlayerEnabled",
+      "name": "8D音效",
+      "color": "#000000",
+      "size": 11,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "soundAdd",
+      "name": "类型ID + 1",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "CheckBox",
+      "on_sound": "√.mp3",
+      "off_sound": "×.mp3",
+      "key": "surroundAllPlayers",
+      "name": "全部玩家",
+      "color": "#63bbd0",
+      "size": 10,
+      "checked": true,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "CheckBox",
+      "on_sound": "√.mp3",
+      "off_sound": "×.mp3",
+      "key": "surroundAllEntities",
+      "name": "全部实体",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "CheckBox",
+      "on_sound": "√.mp3",
+      "off_sound": "×.mp3",
+      "key": "surroundExcludeSelf",
+      "name": "排除自己",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "CheckBox",
+      "on_sound": "√.mp3",
+      "off_sound": "×.mp3",
+      "key": "surroundLoop",
+      "name": "循环播放",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "soundType",
+      "name": "编辑音效类型",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "soundLevel",
+      "name": "编辑音效音调",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "addPlayPos",
+      "name": "添加播放坐标",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "deletePlayPos",
+      "name": "清空播放坐标",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "loadSound",
+      "name": "加载音频文件",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "TextView",
+      "sound": "click.mp3",
+      "key": "selectSound",
+      "name": "选择音频文件",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5]
+    },
+    {
+      "type": "SeekBar",
+      "key": "soundDistance",
+      "format": "环绕距离:%d",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5],
+      "value": 1,
+      "min": 1,
+      "max": 10
+    },
+    {
+      "type": "SeekBar",
+      "key": "soundRepeat",
+      "format": "播放次数:%d",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5],
+      "value": 1,
+      "min": 1,
+      "max": 500
+    },
+    {
+      "type": "SeekBar",
+      "key": "soundVector",
+      "format": "播放倍速:%d",
+      "color": "#63bbd0",
+      "size": 10,
+      "padding": [5, 5, 5, 5],
+      "value": 1,
+      "min": 1,
+      "max": 10
+    }
+  ]
+}
