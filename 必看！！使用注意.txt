@@ -1,0 +1,22 @@
+请将后缀名为.js的文件放入/storage/emulated/0/Android/data/com.netease.x19/files/resources/script中
+
+将36D音频播放.json放入/storage/emulated/0/Android/data/com.netease.x19/files/resources/ui/
+
+在/storage/emulated/0/Android/data/com.netease.x19/files/resources/ui/中的ui_definition.json中添加"36D音频播放"，对齐上下，如果是最后一个，注意不要有英文逗号，其他的都需在后面添加英文逗号
+
+将后缀名为.png的悬浮窗图片文件放入/storage/emulated/0/Android/data/com.netease.x19/files/resources/textures/内
+
+在/storage/emulated/0/Android/data/com.netease.x19/files/resources/ui/中的Main.json(DianaGodUI) / ui_main.json(原版UI)中添加如下字段并与其他字段统一格式：
+        {
+            "type": "TextView",
+            "name": ">36D音频播放<",
+            "color": "#7B68EE",
+            "size": 13,
+            "padding": [
+                5,
+                5,
+                5,
+                5
+            ],
+            "open": "36D音频播放"
+        },
