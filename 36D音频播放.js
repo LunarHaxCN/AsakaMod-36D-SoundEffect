@@ -13,6 +13,8 @@ var playPositionList = [];
 var showFunctionTip = true;
 var currentUI = JSON.parse(readFile(getResource() + "/ui/ui_definition.json"));
 
+
+function onTickEvent() {
 if (soundPlayerEnabled || soundData.length > 0) {
   let targetIDs = surroundAllPlayers ? playerList.map(player => player.id) : targetList;
   if (surroundAllEntities) {
@@ -67,8 +69,10 @@ if (surroundLoop && soundPlayerEnabled && soundFile != null && soundData.length 
   soundData = JSON.parse(soundFile);
   if (showFunctionTip) {
     clientMessage("§f[§uA§cs§ba§dk§ea§aM§9o§5d§f] §r§7>>> §u循环播放中 §b共§f" + soundData.length + "§b条音频数据");
-  }
+ }
 }
+}
+
 
 if (actionKey === "soundAdd") {
   soundType = Number(soundType) + 1;
