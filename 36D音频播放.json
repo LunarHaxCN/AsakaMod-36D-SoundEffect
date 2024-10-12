@@ -5,13 +5,30 @@
 //二次创作请勿删除注释
 {
   "type": "Menu",
-  "title": "音频播放",
-  "title_bg_color": "#7581FF",
+  "title": {
+    "name": "音频播放",
+    "size": 15,
+    "elevation": 3,
+    "background": "#7581FF",
+    "padding": [
+      4,
+      4,
+      4,
+      4
+    ],
+    "colors": [
+      "#FF0000",
+      "#0000FF"
+    ],
+    "image_scaled": true
+  },
   "color": "#FEFEFE",
   "alpha": 0.85,
   "can_close": true,
+  "image_scaled_size": 40,
+  "radius": 10,
+  "show_dividers": false,
   "hide": true,
-  "close_icon": "ic_close.png",
   "items": [
      {
        "type": "TextView",
