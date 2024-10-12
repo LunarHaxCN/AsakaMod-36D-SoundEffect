@@ -5,7 +5,7 @@
 //二次创作请勿删除注释
 {
   "type": "Menu",
-  "title": "<=音频播放=>",
+  "title": "音频播放",
   "title_bg_color": "#7581FF",
   "color": "#FEFEFE",
   "alpha": 0.85,
