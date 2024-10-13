@@ -192,4 +192,4 @@ if (actionKey.key === "exit") {
 clientMessage("§f[§uA§cs§ba§dk§ea§aM§9o§5d§f] §r§7>>>§r 当前分支 §7>>>§r§a[公益] ");
 clientMessage("§f[§uA§cs§ba§dk§ea§aM§9o§5d§f] §r§7>>>§r §a36D音频播放 加载成功!");
 clientMessage("§f[§uA§cs§ba§dk§ea§aM§9o§5d§f] §r§7>>>§r UI §7>>>§r 您当前使用的UI是: " + currentUI.name);
-clientMessage('§r§lUI原作者: Lossiay QQ：1520349207\nEmail：1520349207@qq.com\n§r§l项目地址：https://github.com/LunarHaxCN/AsakaMod-36D-SoundEffect');
+clientMessage('§r§lUI原作者: Lossiay\n§r§l项目地址：https://github.com/LunarHaxCN/AsakaMod-36D-SoundEffect');
